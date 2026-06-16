@@ -1,0 +1,108 @@
+
+/* IMPORT FONT MIRIP */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+/* HEADER */
+.custom-header {
+    background: linear-gradient(to right, #0b3c5d, #0a2f4a);
+    border: 3px solid #f4b400;
+    padding: 12px 20px;
+    position: relative;
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+}
+
+/* WRAPPER */
+.custom-header .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* KIRI */
+.custom-header .left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.custom-header .left img {
+    height: 55px;
+}
+
+/* TEKS KIRI */
+.custom-header .left .text {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* TENGAH */
+.custom-header .center {
+    text-align: center;
+    flex: 1;
+}
+
+/* JUDUL */
+.custom-header .title {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+/* SUBTITLE */
+.custom-header .subtitle {
+    color: #ddd;
+    font-size: 12px;
+    margin-top: 3px;
+    letter-spacing: 0.8px;
+}
+
+/* LOGIN */
+.custom-header .top-right {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+}
+
+.custom-header .top-right a {
+    color: #fff;
+    font-size: 12px;
+    margin-left: 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.custom-header .top-right a:hover {
+    text-decoration: underline;
+}
+</style>
+
+<div class="custom-header">
+    
+    <div class="top-right">
+        <a href="#">Login</a>
+        <a href="#">Register</a>
+    </div>
+
+    <div class="wrapper">
+
+        <div class="left">
+            <img src="LOGO_UNILA.png" alt="Logo">
+            <div class="text">
+                UNIVERSITAS LAMPUNG
+            </div>
+        </div>
+
+        <div class="center">
+            <div class="title">
+                LAPORAN UPAYA NYATA INOVASI ILMU KOMPUTER
+            </div>
+            <div class="subtitle">
+                Jurusan Ilmu Komputer | FMIPA | Universitas Lampung
+            </div>
+        </div>
+
+    </div>
+</div>

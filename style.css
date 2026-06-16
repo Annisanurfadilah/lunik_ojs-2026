@@ -1,0 +1,53 @@
+/* Import font Poppins dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Terapkan font Poppins ke seluruh website */
+body, 
+.pkp_structure_main, 
+.pkp_navigation_primary, 
+.pkp_navigation_user, 
+.pkp_site_name, 
+.pkp_head_wrapper, 
+.pkp_footer_content, 
+.pkp_block, 
+.pkp_block blockquote, 
+.pkp_block p, 
+.pkp_block li, 
+.pkp_structure_head, 
+.pkp_structure_content {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+/* Supaya konten jurnal tetap jelas di atas background */
+.pkp_structure_main,
+.pkp_structure_sidebar,
+.pkp_structure_footer {
+    background: #fff !important;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+/* Hilangkan background default header */
+.pkp_site_name_wrapper,
+.pkp_site_name {
+    background: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Logo/banner header biar full */
+.pkp_site_name .is_img img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    display: block;
+    margin: 0 auto;
+    padding: 0 !important;
+}
+
+/* Hilangkan jarak tambahan header-menu */
+.pkp_navigation_primary_wrapper {
+    margin-top: 0 !important;
+}

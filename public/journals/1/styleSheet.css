@@ -1,0 +1,1182 @@
+﻿/* =========================
+   HILANGKAN BRANDING
+========================= */
+.pkp_brand_footer {
+    display: none;
+}
+
+/* =========================
+   HEADER DESKTOP & MOBILE
+========================= */
+
+/* DESKTOP / TABLET */
+@media only screen and (min-width: 1260px) {
+
+    .pkp_site_name a {
+        font-size: inherit !important;
+        line-height: normal !important;
+        color: inherit !important;
+        text-indent: 0 !important;
+    }
+
+    .pkp_site_name img {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        object-fit: contain !important;
+    }
+
+    .pkp_site_name {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        overflow: visible !important;
+        margin: 0 auto !important;
+        display: block !important;
+        background: transparent !important;
+    }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 768px) {
+
+    .pkp_site_name a {
+        font-size: 0 !important;
+        line-height: 0 !important;
+        color: transparent !important;
+        text-indent: -9999px !important;
+    }
+}
+
+/* =========================
+   BANNER FULL TEMPLATE
+========================= */
+/* DESKTOP HEADER FINAL (DIPAKSA MELEBAR 1160 x 277) */
+@media only screen and (min-width: 769px) {
+
+    /* Memastikan kontainer utama mengizinkan lebar 1160px */
+    .pkp_structure_head,
+    .pkp_head_wrapper,
+    .pkp_site_name_wrapper {
+        width: 100% !important;
+        max-width: 1160px !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+    }
+
+    .pkp_site_name {
+        display: block !important;
+        width: 1160px !important;          /* Paksa lebar elemen ke 1160px */
+        max-width: 1160px !important;      /* Kunci lebar maksimal */
+        height: 277px !important;          /* Paksa tinggi elemen ke 277px */
+        min-height: 277px !important;
+        margin: 0 auto !important;
+        padding: 0 !important;             /* Menghapus padding-top persentase bawaan */
+        
+        background-image: url("http://localhost/ojs-3.5.0-1/ojs-3.5.0-1/public/site/images/admin/group-155.png") !important;
+        
+        /* Memaksa gambar ditarik melebar (stretch) sesuai ukuran kotak */
+        background-size: 1160px 277px !important; 
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
+        background-color: transparent !important;
+        overflow: hidden !important;
+    }
+
+    .pkp_site_name img {
+        display: none !important;
+    }
+
+    .pkp_site_name a {
+        display: block !important;
+        font-size: 0 !important;
+        line-height: 0 !important;
+        color: transparent !important;
+        text-indent: -9999px !important;
+        width: 100% !important;
+        height: 277px !important;          /* Menyesuaikan area klik link setinggi banner */
+    }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 768px) {
+
+    .pkp_site_name {
+        display: block !important;
+        width: 140px !important;
+        min-width: 140px !important;
+        max-width: 140px !important;
+        height: 42px !important;
+        min-height: 42px !important;
+        margin: 0 !important;
+        background-size: 100% 100%  !important;
+        background-position: left center !important;
+        background-repeat: no-repeat !important;
+        background-color: transparent !important;
+        overflow: hidden !important;
+    }
+}
+
+/* =========================
+   ADMIN
+========================= */
+.pkp_navigation_user_wrapper {
+    position: absolute !important;
+    top: 10px !important;
+    right: 18px !important;
+    z-index: 10 !important;
+}
+
+/* =========================
+   NAVIGASI
+========================= */
+.pkp_navigation_primary_row {
+    background: #e9eef2 !important;
+    margin-top: 10px !important;
+    border-radius: 4px !important;
+}
+
+.pkp_navigation_primary_wrapper {
+    max-width: 1160px !important;
+    margin: 0 auto !important;
+    padding: 0 20px !important;
+}
+
+.pkp_navigation_primary > li > a {
+    padding: 12px 18px !important;
+    letter-spacing: 0.3px !important;
+    font-weight: 600 !important;
+}
+
+.pkp_navigation_primary > li > a:hover {
+    background: #02316C !important;
+    border-radius: 4px !important;
+}
+
+/* =========================
+   SEARCH
+========================= */
+.pkp_navigation_search_wrapper {
+    padding-top: 6px !important;
+}
+
+/* =========================
+   REGISTER & LOGIN ELEGAN (NO ICON)
+========================= */
+.pkp_navigation_user_wrapper {
+    position: absolute !important;
+    top: 18px !important;
+    right: 40px !important;
+    z-index: 20 !important;
+}
+
+.pkp_navigation_user > li > a {
+    display: inline-block !important;
+    padding: 6px 14px !important;
+    margin-left: 8px !important;
+    border-radius: 6px !important;
+    font-size: 12.5px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease;
+}
+
+/* REGISTER (clean light) */
+.pkp_navigation_user > li:first-child > a {
+    background: rgba(255,255,255,0.9) !important;
+    color: #02316C !important;
+}
+
+/* LOGIN (outline elegan) */
+.pkp_navigation_user > li:last-child > a {
+    background: transparent !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255,255,255,0.7) !important;
+}
+
+/* HOVER */
+.pkp_navigation_user > li:first-child > a:hover {
+    background: #ffffff !important;
+}
+
+.pkp_navigation_user > li:last-child > a:hover {
+    background: rgba(255,255,255,0.1) !important;
+}
+
+/* =========================
+   PASTIKAN TIDAK ADA ICON
+========================= */
+.pkp_navigation_user > li > a::before {
+    content: none !important;
+}
+
+/* =========================
+   HOVER ARTIKEL LUNIK
+========================= */
+.article-card {
+    transition: all 0.25s ease !important;
+    cursor: pointer !important;
+}
+
+.article-card:hover {
+    background: #F8FBFF !important;
+    border-color: #0B3D91 !important;
+    box-shadow: 0 8px 20px rgba(11,61,145,.14) !important;
+}
+
+.article-card:hover .judul-artikel {
+    color: #0B3D91 !important;
+}
+
+.article-card:hover .pdf-box {
+    background: #0B3D91 !important;
+    border-color: #0B3D91 !important;
+}
+
+.article-card:hover .pdf-text,
+.article-card:hover .pdf-page {
+    color: #ffffff !important;
+}
+
+/* =========================
+   HOVER ACTION CARD 1-3
+========================= */
+.action-card-lunik {
+    transition: all .25s ease !important;
+    cursor: pointer !important;
+}
+
+.action-card-lunik:hover {
+    transform: translateY(-4px) !important;
+    border-color: #0B3D91 !important;
+    box-shadow: 0 12px 26px rgba(11,61,145,.16) !important;
+}
+
+.action-card-lunik:hover .action-arrow-lunik {
+    background: #0B3D91 !important;
+    color: #ffffff !important;
+}
+
+/* =========================
+   HOVER VIEW ALL ISSUES
+========================= */
+.view-issues-lunik{
+    transition: all .25s ease !important;
+    cursor: pointer !important;
+}
+
+.view-issues-lunik:hover{
+    background:#082b69 !important;
+    transform: translateY(-3px) !important;
+    box-shadow:0 12px 24px rgba(11,61,145,.22) !important;
+}
+
+/* =========================================================
+   RESPONSIVE MOBILE FINAL
+   DESKTOP TIDAK DIUBAH
+========================================================= */
+@media only screen and (max-width: 768px) {
+
+    html,
+    body {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+        background: #eeeeee !important;
+    }
+
+    * {
+        box-sizing: border-box !important;
+    }
+
+    img,
+    iframe,
+    video {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    .pkp_navigation_primary_row {
+        background: #ffffff !important;
+        border-bottom: 1px solid #ddd !important;
+        margin: -40px 0 0 0 !important;
+        border-radius: 0 !important;
+    }
+
+    .pkp_site_name {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 88px !important;
+        min-height: 88px !important;
+        padding-bottom: 0 !important;
+        left: auto !important;
+        transform: none !important;
+        background-image: url("http://localhost/ojs-3.5.0-1/ojs-3.5.0-1/public/site/images/admin/group-155.png") !important;
+        background-size: 100% 100%  !important;
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
+        background-color: transparent !important;
+        overflow: hidden !important;
+    }
+
+    .pkp_structure_head,
+    .pkp_head_wrapper,
+    .pkp_site_name_wrapper {
+        background: #ffffff !important;
+        width: 100% !important;
+    }
+
+    .pkp_site_nav_menu {
+        background: #e9eef2 !important;
+        padding: 12px 0 !important;
+        border-top: 1px solid #d0d7de !important;
+        border-bottom: 1px solid #d0d7de !important;
+    }
+
+    .pkp_navigation_primary_wrapper,
+    .pkp_navigation_primary,
+    .pkp_navigation_user {
+        width: 100% !important;
+        max-width: 100% !important;
+        text-align: center !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .pkp_navigation_primary > li,
+    .pkp_navigation_user > li {
+        display: block !important;
+        width: 100% !important;
+        margin: 0 !important;
+        float: none !important;
+    }
+
+    .pkp_navigation_primary > li > a,
+    .pkp_navigation_user > li > a {
+        display: block !important;
+        width: 100% !important;
+        padding: 11px 12px !important;
+        margin: 0 !important;
+        background: transparent !important;
+        color: #001b44 !important;
+        border: none !important;
+        font-size: 13px !important;
+        font-weight: 700 !important;
+        text-align: center !important;
+    }
+
+    .pkp_navigation_search_wrapper {
+        width: 100% !important;
+        float: none !important;
+        text-align: center !important;
+        padding: 10px !important;
+    }
+
+    .pkp_structure_page,
+    .pkp_structure_content,
+    .pkp_structure_main,
+    .pkp_structure_sidebar,
+    .page_index_journal,
+    .homepage_image,
+    .journal_description,
+    .additional_content {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        float: none !important;
+        clear: both !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        overflow-x: hidden !important;
+    }
+
+    .pkp_structure_main {
+        background: #ffffff !important;
+        padding: 14px !important;
+        margin: 0 !important;
+    }
+
+    .homepage_image {
+        text-align: center !important;
+        margin: 0 0 16px 0 !important;
+        padding: 0 !important;
+    }
+
+    .homepage_image img {
+        display: block !important;
+        width: 100% !important;
+        max-width: 180px !important;
+        height: auto !important;
+        margin: 0 auto !important;
+        border: 2px solid #0B3D91 !important;
+    }
+
+    .journal_description,
+    .additional_content {
+        font-size: 11.5px !important;
+        line-height: 1.6 !important;
+        text-align: left !important;
+        color: #001b44 !important;
+        padding: 0 !important;
+    }
+
+    .journal_description *,
+    .additional_content *,
+    .pkp_structure_main p {
+        max-width: 100% !important;
+        font-size: 11.5px !important;
+        line-height: 1.6 !important;
+        overflow-wrap: break-word !important;
+    }
+
+    .journal_description p,
+    .additional_content p,
+    .pkp_structure_main p {
+        text-align: justify !important;
+        margin: 12px 0 !important;
+    }
+
+    table,
+    tbody,
+    tr,
+    td {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .action-card-lunik {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-height: auto !important;
+        padding: 10px !important;
+        margin: 0 0 10px 0 !important;
+        border-radius: 14px !important;
+        display: flex !important;
+        align-items: center !important;
+        gap: 10px !important;
+    }
+
+    .action-card-lunik h3,
+    .action-card-lunik strong {
+        font-size: 10.5px !important;
+        line-height: 1.3 !important;
+        margin: 0 !important;
+    }
+
+    .action-card-lunik p,
+    .action-card-lunik span {
+        font-size: 10px !important;
+        line-height: 1.35 !important;
+        margin: 0 !important;
+    }
+
+    .action-arrow-lunik {
+        width: 28px !important;
+        height: 28px !important;
+        min-width: 28px !important;
+        border-radius: 9px !important;
+    }
+
+    .article-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 11px 12px !important;
+        margin: 0 0 12px 0 !important;
+        border-radius: 14px !important;
+        box-shadow: 0 5px 14px rgba(0,0,0,.04) !important;
+    }
+
+    .article-card h3,
+    .article-card h4,
+    .article-card .judul-artikel {
+        font-size: 11px !important;
+        line-height: 1.35 !important;
+        margin-bottom: 8px !important;
+    }
+
+    .article-card p,
+    .article-card span,
+    .article-card div {
+        font-size: 9.5px !important;
+        line-height: 1.45 !important;
+    }
+
+    .pdf-box {
+        width: 40px !important;
+        height: 40px !important;
+        min-width: 40px !important;
+        border-radius: 11px !important;
+        font-size: 9px !important;
+    }
+
+    .view-issues-lunik {
+        width: 100% !important;
+        max-width: 230px !important;
+        display: block !important;
+        text-align: center !important;
+        padding: 9px 14px !important;
+        margin: 16px auto 22px auto !important;
+        border-radius: 24px !important;
+        font-size: 10.5px !important;
+        line-height: 1.3 !important;
+        box-shadow: 0 6px 14px rgba(11,61,145,.18) !important;
+    }
+
+    .pkp_structure_sidebar {
+        background: #ffffff !important;
+        padding: 16px 14px !important;
+        margin: 0 !important;
+        text-align: center !important;
+    }
+
+    .pkp_structure_sidebar .block,
+    .pkp_structure_sidebar > div,
+    .pkp_structure_sidebar > section {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto 18px auto !important;
+        padding: 0 !important;
+        text-align: center !important;
+    }
+
+    .pkp_structure_sidebar a,
+    .pkp_structure_sidebar button {
+        width: 100% !important;
+        max-width: 260px !important;
+        margin: 6px auto !important;
+        text-align: center !important;
+    }
+
+    .pkp_footer_content {
+        display: flex !important;
+        align-items: flex-start !important;
+        gap: 14px !important;
+        width: calc(100% - 20px) !important;
+        max-width: 360px !important;
+        margin: 18px auto !important;
+        padding: 16px 14px !important;
+        background: transparent !important; 
+        border: none !important; 
+        box-shadow: none !important; 
+    }
+
+    .pkp_footer_content img {
+        width: 88px !important;
+        max-width: 88px !important;
+        min-width: 88px !important;
+        height: auto !important;
+        margin: 0 !important;
+        padding: 4px !important;
+        background: #fff !important;
+        border: 1px solid #dbe3ec !important;
+        border-radius: 6px !important;
+        flex-shrink: 0 !important;
+    }
+
+    .pkp_footer_content h1,
+    .pkp_footer_content h2,
+    .pkp_footer_content h3 {
+        font-size: 13px !important;
+        line-height: 1.35 !important;
+        margin: 0 0 8px 0 !important;
+        text-align: left !important;
+        color: #003b8f !important;
+    }
+
+    .pkp_footer_content p,
+    .pkp_footer_content div,
+    .pkp_footer_content span,
+    .pkp_footer_content a,
+    .pkp_footer_content strong,
+    .pkp_footer_content b {
+        font-size: 9.5px !important;
+        line-height: 1.45 !important;
+        text-align: left !important;
+        margin-bottom: 3px !important;
+        color: #001b44 !important;
+        overflow-wrap: break-word !important;
+    }
+
+    .pkp_footer_content hr {
+        margin: 10px 0 !important;
+        border: 0 !important;
+        border-top: 1px solid #dbe3ec !important;
+    }
+
+    .pkp_footer_content .copyright,
+    .pkp_footer_content .license,
+    .pkp_footer_content .cc-license {
+        display: flex !important;
+        align-items: center !important;
+        gap: 8px !important;
+        margin-top: 8px !important;
+    }
+
+    .pkp_footer_content img[src*="license"],
+    .pkp_footer_content img[src*="88x31"],
+    .pkp_footer_content img[src*="creativecommons"] {
+        width: 56px !important;
+        max-width: 56px !important;
+        min-width: 56px !important;
+        border: none !important;
+        padding: 0 !important;
+        background: transparent !important;
+        margin: 0 !important;
+    }
+
+    .pkp_footer_content .copyright p,
+    .pkp_footer_content .license p,
+    .pkp_footer_content .cc-license p {
+        font-size: 8.8px !important;
+        line-height: 1.4 !important;
+        margin: 0 !important;
+        text-align: left !important;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+
+    .pkp_site_name {
+        height: 82px !important;
+        margin-top: 40px !important;
+    }
+
+    .homepage_image img {
+        max-width: 160px !important;
+    }
+
+    .journal_description *,
+    .additional_content *,
+    .pkp_structure_main p {
+        font-size: 11px !important;
+    }
+
+    .pkp_footer_content {
+        gap: 10px !important;
+        padding: 14px 12px !important;
+    }
+
+    .pkp_footer_content img {
+        width: 76px !important;
+        max-width: 76px !important;
+        min-width: 76px !important;
+    }
+
+    .pkp_footer_content h1,
+    .pkp_footer_content h2,
+    .pkp_footer_content h3 {
+        font-size: 12px !important;
+    }
+
+    .pkp_footer_content p,
+    .pkp_footer_content div,
+    .pkp_footer_content span,
+    .pkp_footer_content a {
+        font-size: 8.8px !important;
+        line-height: 1.4 !important;
+    }
+
+    .pkp_footer_content img[src*="license"],
+    .pkp_footer_content img[src*="88x31"],
+    .pkp_footer_content img[src*="creativecommons"] {
+        width: 50px !important;
+        max-width: 50px !important;
+        min-width: 50px !important;
+    }
+}
+
+/* =========================
+   ACTION CARD RESPONSIVE FINAL
+========================= */
+
+/* WRAPPER */
+@media only screen and (max-width: 768px) {
+
+    .action-card-wrapper,
+    .lunik-action-wrapper,
+    .custom-action-wrapper,
+    .pkp_structure_main div:has(> .action-card-lunik) {
+        display: flex !important;
+        gap: 8px !important;
+        width: 100% !important;
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+        padding: 6px 4px 12px 4px !important;
+        margin: 12px 0 18px 0 !important;
+        scroll-snap-type: x mandatory !important;
+        -webkit-overflow-scrolling: touch !important;
+    }
+
+    .action-card-lunik {
+        flex: 0 0 clamp(135px, 42vw, 230px) !important;
+        width: clamp(135px, 42vw, 230px) !important;
+        min-width: clamp(135px, 42vw, 230px) !important;
+        min-height: clamp(58px, 15vw, 92px) !important;
+        display: grid !important;
+        grid-template-columns: clamp(24px, 7vw, 36px) minmax(0, 1fr) clamp(16px, 5vw, 26px) !important;
+        gap: clamp(6px, 2vw, 10px) !important;
+        align-items: center !important;
+        padding: clamp(7px, 2vw, 12px) !important;
+        border-radius: 14px !important;
+        overflow: hidden !important;
+        scroll-snap-align: start !important;
+    }
+
+    .action-card-lunik .action-icon-lunik,
+    .action-card-lunik > div:first-child {
+        width: clamp(24px, 7vw, 36px) !important;
+        height: clamp(24px, 7vw, 36px) !important;
+        min-width: clamp(24px, 7vw, 36px) !important;
+        border-radius: 9px !important;
+        margin: 0 !important;
+    }
+
+    .action-card-lunik h3,
+    .action-card-lunik strong {
+        display: block !important;
+        font-size: clamp(7px, 2.4vw, 12px) !important;
+        line-height: 1.15 !important;
+        margin: 0 0 2px 0 !important;
+        text-align: left !important;
+        white-space: normal !important;
+        word-break: normal !important;
+        overflow-wrap: break-word !important;
+    }
+
+    .action-card-lunik p,
+    .action-card-lunik span {
+        display: block !important;
+        font-size: clamp(5.8px, 2vw, 9.5px) !important;
+        line-height: 1.18 !important;
+        margin: 0 !important;
+        text-align: left !important;
+        white-space: normal !important;
+        word-break: normal !important;
+        overflow-wrap: break-word !important;
+    }
+
+    .action-arrow-lunik {
+        width: clamp(16px, 5vw, 26px) !important;
+        height: clamp(16px, 5vw, 26px) !important;
+        min-width: clamp(16px, 5vw, 26px) !important;
+        justify-self: end !important;
+        margin: 0 !important;
+        border-radius: 50% !important;
+    }
+}
+
+/* HP SUPER KECIL: JUDUL SAJA */
+@media only screen and (max-width: 360px) {
+
+    .action-card-lunik {
+        flex-basis: 132px !important;
+        width: 132px !important;
+        min-width: 132px !important;
+        min-height: 56px !important;
+    }
+
+    .action-card-lunik p,
+    .action-card-lunik span {
+        display: none !important;
+    }
+
+    .action-card-lunik h3,
+    .action-card-lunik strong {
+        font-size: 7.2px !important;
+        line-height: 1.15 !important;
+    }
+}
+
+/* =========================
+   HP KECIL = HANYA JUDUL
+========================= */
+@media only screen and (max-width: 600px) {
+
+    .action-card-lunik {
+        flex: 0 0 160px !important;
+        width: 160px !important;
+        min-width: 160px !important;
+        min-height: 60px !important;
+        padding: 8px 10px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 8px !important;
+        overflow: hidden !important;
+    }
+
+    .action-card-lunik > div:first-child > div:first-child {
+        width: 26px !important;
+        height: 26px !important;
+        min-width: 26px !important;
+        font-size: 10px !important;
+        border-radius: 8px !important;
+    }
+
+    .action-card-lunik > div:first-child {
+        display: flex !important;
+        align-items: center !important;
+        gap: 8px !important;
+        min-width: 0 !important;
+        flex: 1 !important;
+    }
+
+    .action-card-lunik > div:first-child > div > div:last-child {
+        display: none !important;
+    }
+
+    .action-card-lunik > div:first-child > div > div:first-child {
+        display: block !important;
+        font-size: 8px !important;
+        line-height: 1.15 !important;
+        font-weight: 700 !important;
+        margin: 0 !important;
+        color: #1e293b !important;
+        white-space: normal !important;
+        word-break: break-word !important;
+    }
+
+    .action-arrow-lunik {
+        width: 18px !important;
+        height: 18px !important;
+        min-width: 18px !important;
+        font-size: 7px !important;
+        margin: 0 !important;
+    }
+}
+
+/* =========================
+   JOURNAL INFO MOBILE FINAL
+========================= */
+@media only screen and (max-width: 768px) {
+
+    .lunik-home-content {
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+    }
+    .lunik-home-content > div:first-child {
+        display: grid !important;
+        grid-template-columns: 38% 1fr !important;
+        gap: 14px !important;
+        align-items: start !important;
+    }
+
+    .lunik-home-content > div:first-child > div:first-child {
+        width: 100% !important;
+    }
+
+    .lunik-home-content > div:first-child > div:first-child img {
+        width: 100% !important;
+        max-width: 145px !important;
+        border-radius: 8px !important;
+        box-shadow: 0 4px 12px rgba(0,0,0,.08) !important;
+    }
+
+    .lunik-home-content > div:first-child > div:nth-child(2) {
+        display: contents !important;
+    }
+
+    .lunik-home-content > div:first-child > div:nth-child(2) > div:first-child {
+        grid-column: 2 !important;
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 9px 10px !important;
+    }
+
+    .lunik-home-content > div:first-child > div:nth-child(2) > div:first-child div {
+        font-size: 8.6px !important;
+        line-height: 1.35 !important;
+    }
+
+    .lunik-home-content > div:first-child > div:nth-child(2) > div:nth-child(2) {
+        grid-column: 1 / -1 !important;
+        margin-top: 10px !important;
+        padding-top: 12px !important;
+        border-top: 1px solid #e2e8f0 !important;
+    }
+
+    .lunik-home-content > div:first-child > div:nth-child(2) > div:nth-child(2) p {
+        font-size: 10px !important;
+        line-height: 1.75 !important;
+        text-align: justify !important;
+        margin: 0 !important;
+    }
+}
+
+/* =========================
+   CARD HANYA COVER + INFO
+========================= */
+@media only screen and (max-width: 768px) {
+
+    .lunik-home-content > div:first-child {
+        background: #ffffff !important;
+        border-radius: 16px !important;
+        padding: 14px !important;
+        border: 1px solid #e2e8f0 !important;
+        box-shadow: 0 4px 14px rgba(0,0,0,.05) !important;
+    }
+
+    .lunik-home-content > div:first-child > div:nth-child(2) > div:nth-child(2) {
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        margin-top: 14px !important;
+    }
+
+    .lunik-home-content > div:first-child > div:nth-child(2) > div:nth-child(2) p {
+        font-size: 10px !important;
+        line-height: 1.8 !important;
+        text-align: justify !important;
+    }
+}
+
+/* =========================
+   MOBILE HEADER CLEAN
+========================= */
+@media only screen and (max-width: 768px) {
+
+    .pkp_structure_head,
+    .pkp_head_wrapper,
+    .pkp_site_name_wrapper {
+        background: #ffffff !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow: visible !important; /* Diubah dari hidden agar menu dropdown tidak terpotong */
+    }
+
+    .pkp_navigation_primary_row {
+        background: #ffffff !important;
+        border: none !important;
+        min-height: 44px !important;
+        padding: 0 12px !important;
+        display: flex !important;
+        align-items: center !important;
+        margin: 0 !important; /* Menghilangkan margin minus yang merusak klik */
+        position: relative !important;
+        z-index: 99999 !important; /* Memastikan lapisan menu berada paling atas */
+    }
+
+    .pkp_site_nav_toggle {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        width: 44px !important; /* Diperbesar sedikit agar area sentuh jari lebih pas */
+        height: 44px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        z-index: 100000 !important; /* Dipaksa berada di atas pembungkus navigasi */
+    }
+
+    .pkp_site_nav_toggle span {
+        background: #111827 !important;
+        height: 2.5px !important;
+        width: 22px !important;
+        border-radius: 10px !important;
+        margin: 3px 0 !important;
+        display: block !important;
+    }
+
+    .pkp_site_nav_toggle::after,
+    .pkp_site_nav_toggle::before {
+        box-shadow: none !important;
+    }
+}
+/* =========================
+   MOBILE MENU MODERN
+========================= */
+@media only screen and (max-width: 768px) {
+
+    .pkp_navigation_primary_row {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        background: #ffffff !important;
+        border-bottom: 1px solid #e5e7eb !important;
+        min-height: 60px !important;
+        padding: 0 16px !important;
+        position: relative !important;
+        z-index: 9999 !important;
+    }
+
+    .pkp_site_nav_toggle {
+        width: 38px !important;
+        height: 38px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 5px !important;
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        cursor: pointer !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        position: relative !important;
+    }
+
+    .pkp_site_nav_toggle span,
+    .pkp_site_nav_toggle::before,
+    .pkp_site_nav_toggle::after {
+        content: "" !important;
+        display: block !important;
+        width: 22px !important;
+        height: 2.5px !important;
+        background: #1e293b !important;
+        border-radius: 20px !important;
+        transition: all .25s ease !important;
+    }
+
+    .pkp_site_nav_toggle::after {
+        box-shadow: none !important;
+    }
+
+    .pkp_site_nav_menu {
+        background: #ffffff !important;
+        border-top: 1px solid #e5e7eb !important;
+        padding: 10px 0 !important;
+        box-shadow: 0 8px 24px rgba(0,0,0,.06) !important;
+    }
+
+    .pkp_navigation_primary,
+    .pkp_navigation_user {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .pkp_navigation_primary li,
+    .pkp_navigation_user li {
+        width: 100% !important;
+        list-style: none !important;
+        margin: 0 !important;
+        border-bottom: 1px solid #f1f5f9 !important;
+    }
+
+    .pkp_navigation_primary li a,
+    .pkp_navigation_user li a {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        width: 100% !important;
+        padding: 14px 18px !important;
+        font-size: 14px !important;
+        font-weight: 500 !important;
+        color: #1e293b !important;
+        text-decoration: none !important;
+        background: #ffffff !important;
+        transition: all .2s ease !important;
+    }
+
+    .pkp_navigation_primary li a:hover,
+    .pkp_navigation_user li a:hover {
+        background: #f8fafc !important;
+        color: #02316C !important;
+    }
+
+    .pkp_navigation_primary .dropdown-menu {
+        background: #f8fafc !important;
+        padding-left: 10px !important;
+    }
+
+    .pkp_navigation_primary .dropdown-menu a {
+        font-size: 13px !important;
+        padding: 12px 18px !important;
+        color: #475569 !important;
+    }
+}
+
+/* =========================
+   FIX HAMBURGER POSITION
+========================= */
+@media only screen and (max-width: 768px) {
+
+    .pkp_navigation_primary_row {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        position: relative !important;
+        width: 100% !important;
+    }
+
+    /* Memastikan wrapper menggunakan lebar penuh tanpa batasan */
+    .pkp_site_name_wrapper {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important; /* Mendorong elemen ke ujung kiri & kanan */
+        width: 100% !important;
+        max-width: 100% !important; /* Memaksa agar tidak tertahan max-width bawaan */
+        padding: 10px !important; /* Menjaga jarak aman dari pinggir layar HP */
+        background: #ffffff !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Memaksa tombol hamburger/menu OJS berada di paling KIRI */
+    .pkp_navigation_primary_toggle {
+        order: 1 !important; /* Angka negatif memaksa elemen ini maju ke posisi pertama (kiri) */
+        position: static !important;
+        margin: 0 !important
+
+    }
+
+    /* Memaksa kontainer logo berada di paling KANAN */
+    .pkp_site_name {
+        order: -1 !important; /* Memaksa logo berada di posisi setelah tombol */
+        margin: 0 !important;
+        width: 140px !important;
+        height: 42px !important;
+        background: transparent !important; 
+        position: static !important;
+        transform: none !important;
+        z-index: 1 !important;
+    }
+
+    /* Mengatur gambar logo di dalam link jangkar */
+    .pkp_site_name a {
+        display: block !important;
+        width: 100% !important;
+        height: 100% !important;
+        background-image: url("http://localhost/ojs-3.5.0-1/ojs-3.5.0-1/public/site/images/admin/lunik.png") !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        background-position: right center !important; /* Menjamin gambar logo merapat ke kanan */
+        text-indent: -9999px !important;
+        font-size: 0 !important;
+    }
+}
+/* =========================================================
+   PERBAIKAN KHUSUS HEADER MOBILE (TERPOTONG PADA IMAGE_944CE1.PNG)
+========================================================= */
+@media only screen and (max-width: 768px) {
+    /* Memberikan ruang vertikal agar logo dan hamburger tidak terpotong */
+    .pkp_navigation_primary_row {
+        min-height: 70px !important;
+        height: auto !important;
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+
+    /* Memastikan teks/logo memiliki ruang yang cukup dan tidak keluar dari kontainer */
+    .pkp_site_name {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        height: auto !important;
+        min-height: 42px !important;
+    }
+}

@@ -1,0 +1,20 @@
+.DS_Store
+usageStats/IPGeoDB.mmdb
+# Cache OJS
+cache/
+cache_fc/
+cache_t_cache/
+cache_t_compile/
+
+# File publik yang berubah-ubah
+public/
+
+# File konfigurasi lokal
+config.inc.php
+
+# Log
+*.log
+
+# Sistem operasi
+.DS_Store
+Thumbs.db
